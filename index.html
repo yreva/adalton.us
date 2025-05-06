@@ -1,51 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avery Dalton | Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #007653; /* forest green */
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    .container {
+      background-color: #e0e0e0; /* off-white bubble */
+      border-radius: 1rem;
+      padding: 2rem;
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .link-button {
+      display: block;
+      background: #ffffff;
+      border: 2px solid #e0e0e0;
+      padding: 0.75rem 1rem;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .link-button:hover {
+      background-color: #f0f0f0;
+      transform: scale(1.02);
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 9999px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 2px solid #ddd;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #0f0f0f;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Your Professional Title</p>
-        <p>Email: your.email@example.com | Phone: (123) 456-7890</p>
-    </header>
+  <div class="container">
+    <img src="ProfilePic.jpg" alt="Profile picture" class="avatar" />
+    <h1>Avery Dalton</h1>
 
-    <main>
-        <section id="work-experience">
-            <h2>Work Experience</h2>
-            <div class="entry">
-                <h3>Job Title</h3>
-                <p><em>Company Name</em> | January 2020 - Present</p>
-                <ul>
-                    <li>Key responsibility or achievement #1</li>
-                    <li>Key responsibility or achievement #2</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="entry">
-                <h3>Project Name</h3>
-                <p>Description of the project, technologies used, and outcome.</p>
-            </div>
-        </section>
-
-        <section id="certifications-skills">
-            <h2>Certifications and Skills</h2>
-            <ul>
-                <li>Certification or Skill #1</li>
-                <li>Certification or Skill #2</li>
-                <li>Certification or Skill #3</li>
-            </ul>
-        </section>
-    </main>
+    <a class="link-button" href="https://www.linkedin.com/in/averybd" target="_blank">LinkedIn</a>
+    <a class="link-button" href="https://scholar.google.com/citations?user=Swptx4sAAAAJ" target="_blank">Google Scholar</a>
+    <a class="link-button" href="https://www.flickr.com/photos/adaltonus" target="_blank">Flickr</a>
 
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+      © 2025 Avery Dalton
     </footer>
+  </div>
 </body>
 </html>
